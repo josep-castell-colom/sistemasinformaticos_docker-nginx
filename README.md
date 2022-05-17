@@ -89,9 +89,9 @@ Una imágen personalizada nos sirve para mover nuestros archivos juntamente con 
 
    <img src="imgs/montar-imagen-personalizada.png"/>
 
-3. Si ahora ejecutamos nuestra imagen en en contenedor ya no necesitamos montar el volumen ya que se utiliza la información contenida en el Dockerfile.
+3. Si ahora ejecutamos nuestra imagen en contenedor ya no necesitamos montar el volumen ya que se utiliza la información contenida en el Dockerfile.
 
-   > Primero debemos detener el contenedor anterior.
+   > Primero debemos detener el contenedor anterior. `docker stop web`
 
    ```docker
    docker run --rm -d -p 8080:80 --name web webserver
